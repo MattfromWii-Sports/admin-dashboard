@@ -31,14 +31,14 @@ body {
     gap: 1rem;
 }
 .side-title > img {
-    width: 45px;
+    width: 3rem;
 }
-h1 {
+.sidebar h1 {
     color: white;
     font-size: 1.6rem;
 }
 .sidebar img {
-    width: 30px;
+    width: 2rem;
     filter: brightness(0) invert(1);
 }
 .sidebar li {
@@ -54,10 +54,55 @@ h1 {
     font-weight: 600;
 }
 
-.top {
-    background-color: red;
+/*Header*/
+.header {
+    background-color: whitesmoke;
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template: auto 1fr / 2fr 1fr;
+    padding: 1rem 2rem;
 }
+
+.header p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.header img {
+    width: 2rem;
+}
+.header-top-left {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.search-bar {
+    border-radius: 14px;
+    border: none;
+    background-color: rgb(194, 223, 222);
+    height: 2rem;
+    flex: 1;
+}
+.header-top-right {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.header-top-right img:nth-child(2) {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.header-bottom-left {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.header-bottom-right {
+    grid-area: 2 / 2 / 3 / 3;
+}
+/*Main Body*/
 .content {
     background-color: blue;
     grid-area: 2 / 2 / 3 / 3;
