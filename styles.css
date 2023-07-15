@@ -166,18 +166,53 @@ body {
     background-color: whitesmoke;
     padding: 1rem;
     border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 .content-side-top {
     padding: 1rem;
     grid-row: 1;
     display: flex;
     flex-direction: column;
+    gap: .3rem;
     background-color: aqua;
+}
+.content-side-header {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.content-side-text {
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgb(75, 74, 74);
+}
+.line {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(156, 166, 175);
 }
 .content-side-bottom {
     padding: 1rem;
     grid-row: 2;
     display: flex;
     flex-direction: column;
+    gap: .3rem;
     background-color: blueviolet;
+}
+.trending-users {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.trending-users > img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.trending-users:nth-child(2) > img {
+    height: 3.2rem;
+    width: 3.4rem;
 }
