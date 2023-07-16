@@ -155,7 +155,7 @@ body {
 .content-side {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.4fr 1fr;
     gap: 1rem;
 }
 .content-side h3 {
@@ -176,7 +176,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: .3rem;
-    background-color: aqua;
 }
 .content-side-header {
     font-size: 1rem;
@@ -199,7 +198,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: .3rem;
-    background-color: blueviolet;
 }
 .trending-users {
     display: flex;
@@ -212,7 +210,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
-.trending-users:nth-child(2) > img {
+.trending-users:nth-child(3) > img {
     height: 3.2rem;
-    width: 3.4rem;
+    width: 3.2rem;
 }
