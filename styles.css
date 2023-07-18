@@ -36,6 +36,7 @@ body {
 .sidebar h1 {
     color: white;
     font-size: 1.6rem;
+    cursor: pointer;
 }
 .sidebar img {
     width: 2rem;
